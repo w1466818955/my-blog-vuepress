@@ -1,0 +1,24 @@
+{
+  "name": "blog-ygm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.9.7",
+    "@vuepress/plugin-back-to-top": "^1.9.7"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "leancloud-storage": "^4.12.2",
+    "qiniu-js": "^3.4.0",
+    "valine": "^1.4.18",
+    "vuepress": "^1.9.7"
+  }
+}
