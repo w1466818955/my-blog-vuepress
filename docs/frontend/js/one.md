@@ -18,7 +18,7 @@ for (let key in userMsg) {
 3 gg
 
 for (let item of userMsg) {
-    
+
   console.log(item);
 }
 // 输出结果
@@ -29,9 +29,9 @@ userMsg is not iterable
 ## 2.遍历输出结果不同
 
 ```js
-let arr = ["a", "b", "c", "d"];
+let arr = ['a', 'b', 'c', 'd'];
 for (let key in arr) {
-  console.log(key);
+    console.log(key);
 }
 // 输出结果
 0;
@@ -40,7 +40,7 @@ for (let key in arr) {
 3;
 
 for (let item of arr) {
-  console.log(item);
+    console.log(item);
 }
 
 // 输出结果
