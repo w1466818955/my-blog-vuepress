@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>(一)转义字符和原字符 | Ygm的个人博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/my-blog/img/img.png">
+    <meta name="description" content="不断学习，持续更新......">
+    
+    <link rel="preload" href="/my-blog/assets/css/0.styles.04cd05af.css" as="style"><link rel="preload" href="/my-blog/assets/js/app.c462eeac.js" as="script"><link rel="preload" href="/my-blog/assets/js/2.b2c966ef.js" as="script"><link rel="preload" href="/my-blog/assets/js/11.cafc44d7.js" as="script"><link rel="prefetch" href="/my-blog/assets/js/10.a66bbf3d.js"><link rel="prefetch" href="/my-blog/assets/js/12.a15ded9a.js"><link rel="prefetch" href="/my-blog/assets/js/13.4fa446f7.js"><link rel="prefetch" href="/my-blog/assets/js/14.cd6e102d.js"><link rel="prefetch" href="/my-blog/assets/js/15.3f7196b8.js"><link rel="prefetch" href="/my-blog/assets/js/16.b8364577.js"><link rel="prefetch" href="/my-blog/assets/js/17.af58ba6b.js"><link rel="prefetch" href="/my-blog/assets/js/18.f01db61c.js"><link rel="prefetch" href="/my-blog/assets/js/19.27fbfb51.js"><link rel="prefetch" href="/my-blog/assets/js/20.b34799ef.js"><link rel="prefetch" href="/my-blog/assets/js/21.caed3f3f.js"><link rel="prefetch" href="/my-blog/assets/js/22.d3cf4cd8.js"><link rel="prefetch" href="/my-blog/assets/js/23.ffad5780.js"><link rel="prefetch" href="/my-blog/assets/js/24.dadc9af2.js"><link rel="prefetch" href="/my-blog/assets/js/25.dc12f699.js"><link rel="prefetch" href="/my-blog/assets/js/26.a4f16c3e.js"><link rel="prefetch" href="/my-blog/assets/js/27.8e0fb178.js"><link rel="prefetch" href="/my-blog/assets/js/28.dcd2701c.js"><link rel="prefetch" href="/my-blog/assets/js/29.444f0b0a.js"><link rel="prefetch" href="/my-blog/assets/js/3.bfc32057.js"><link rel="prefetch" href="/my-blog/assets/js/30.9f09127b.js"><link rel="prefetch" href="/my-blog/assets/js/31.f026a46b.js"><link rel="prefetch" href="/my-blog/assets/js/4.261357d3.js"><link rel="prefetch" href="/my-blog/assets/js/5.0781132e.js"><link rel="prefetch" href="/my-blog/assets/js/6.4e261eb0.js"><link rel="prefetch" href="/my-blog/assets/js/7.7e641ac6.js"><link rel="prefetch" href="/my-blog/assets/js/8.70b93117.js"><link rel="prefetch" href="/my-blog/assets/js/9.4361fdfe.js">
+    <link rel="stylesheet" href="/my-blog/assets/css/0.styles.04cd05af.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/my-blog/" class="home-link router-link-active"><img src="/my-blog/img/img.png" alt="Ygm的个人博客" class="logo"> <span class="site-name can-hide">Ygm的个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/my-blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-blog/frontend/html/one.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/css/one.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/js/one.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/TS/one.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/vue/one.html" class="nav-link">
+  vue系列
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/react/one.html" class="nav-link">
+  react系列
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/uniapp/one.html" class="nav-link">
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/question-bug/one.html" class="nav-link">
+  项目问题bug
+</a></li></ul></div></div><div class="nav-item"><a href="/my-blog/frontend/Python/one.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Python
+</a></div><div class="nav-item"><a href="/my-blog/frontend/other/one.html" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="/my-blog/message/" class="nav-link">
+  留言板
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/my-blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-blog/frontend/html/one.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/css/one.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/js/one.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/TS/one.html" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/vue/one.html" class="nav-link">
+  vue系列
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/react/one.html" class="nav-link">
+  react系列
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/frontend/uniapp/one.html" class="nav-link">
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/my-blog/question-bug/one.html" class="nav-link">
+  项目问题bug
+</a></li></ul></div></div><div class="nav-item"><a href="/my-blog/frontend/Python/one.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Python
+</a></div><div class="nav-item"><a href="/my-blog/frontend/other/one.html" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="/my-blog/message/" class="nav-link">
+  留言板
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>react系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>uniapp</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Python</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/my-blog/frontend/Python/one.html" aria-current="page" class="active sidebar-link">一、python基本知识点</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/my-blog/frontend/Python/one.html#一-转义字符和原字符" class="sidebar-link">(一)转义字符和原字符</a></li><li class="sidebar-sub-header"><a href="/my-blog/frontend/Python/one.html#二-变量的定义和使用" class="sidebar-link">(二)变量的定义和使用</a></li><li class="sidebar-sub-header"><a href="/my-blog/frontend/Python/one.html#三-变量的多次赋值" class="sidebar-link">(三)变量的多次赋值</a></li><li class="sidebar-sub-header"><a href="/my-blog/frontend/Python/one.html#四-常见的数据类型" class="sidebar-link">(四)常见的数据类型</a></li><li class="sidebar-sub-header"><a href="/my-blog/frontend/Python/one.html#五-数据类型转换" class="sidebar-link">(五)数据类型转换</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="一-转义字符和原字符"><a href="#一-转义字符和原字符" class="header-anchor">#</a> (一)转义字符和原字符</h2> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code>1.转义字符
+\t: 制表符
+\n: 换行符
+\r: 回车符
+\b: 退格符
+
+2.原字符
+在字符串前面加上r或R，表示原字符，不会进行转义
+例：print(r'hello\\world')
+
+输出：hello\\world
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="二-变量的定义和使用"><a href="#二-变量的定义和使用" class="header-anchor">#</a> (二)变量的定义和使用</h2> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code>1.变量的定义
+变量名 = 值
+
+2.变量的使用
+print(变量名)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="三-变量的多次赋值"><a href="#三-变量的多次赋值" class="header-anchor">#</a> (三)变量的多次赋值</h2> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code>name = '张三'
+name = '李四'
+print(name)
+
+
+输出：李四
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="四-常见的数据类型"><a href="#四-常见的数据类型" class="header-anchor">#</a> (四)常见的数据类型</h2> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code># 1.字符串
+name = '张三'
+print(type(name))
+
+输出：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'str'</span><span class="token punctuation">&gt;</span></span>
+
+# 2.整数
+age = 18
+print(type(age))
+
+输出：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'int'</span><span class="token punctuation">&gt;</span></span>
+
+# 3.浮点数
+height = 1.75
+print(type(height))
+
+输出：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'float'</span><span class="token punctuation">&gt;</span></span>
+
+# 4.布尔值
+is_ok = True
+print(type(is_ok))
+
+输出：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'bool'</span><span class="token punctuation">&gt;</span></span>
+
+# 5.空值
+a = None
+print(type(a))
+
+输出：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'NoneType'</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h2 id="五-数据类型转换"><a href="#五-数据类型转换" class="header-anchor">#</a> (五)数据类型转换</h2> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code># 1.整数转换成浮点数
+a = 1
+print(float(a))
+print(type(float(a)))
+
+输出：1.0 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'float'</span><span class="token punctuation">&gt;</span></span>
+
+# 2.浮点数转换成整数
+b = 1.5
+print(int(b))
+print(type(int(b)))
+
+输出：1 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'int'</span><span class="token punctuation">&gt;</span></span>
+
+# 3.字符串转换成整数
+c = '123'
+print(int(c))
+print(type(int(c)))
+
+输出：123 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'int'</span><span class="token punctuation">&gt;</span></span>
+
+# 4.字符串转换成浮点数
+d = '1.23'
+print(float(d))
+print(type(float(d)))
+
+输出：1.23 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'float'</span><span class="token punctuation">&gt;</span></span>
+
+# 5.整数转换成字符串
+e = 123
+print(str(e))
+print(type(str(e)))
+
+输出：123 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'str'</span><span class="token punctuation">&gt;</span></span>
+
+# 6.浮点数转换成字符串
+f = 1.23
+print(str(f))
+print(type(str(f)))
+
+输出：1.23 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'str'</span><span class="token punctuation">&gt;</span></span>
+
+# 7.布尔值转换成字符串
+g = True
+print(str(g))
+print(type(str(g)))
+
+输出：True <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'str'</span><span class="token punctuation">&gt;</span></span>
+
+# 8.字符串转换成布尔值
+h = 'True'
+print(bool(h))
+print(type(bool(h)))
+
+输出：True <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">'bool'</span><span class="token punctuation">&gt;</span></span>
+
+# 9.整数转换成布尔值
+i = 1
+print(bool(i))
+
+输出：True
+
+# 10.浮点数转换成布尔值
+j = 1.23
+print(bool(j))
+
+输出：True
+
+# 11.空值转换成布尔值
+a = None
+print(bool(a))
+
+输出：False
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/my-blog/frontend/uniapp/tow.html" class="prev">
+        二、实现h5跳转app指定url或者app跳转app指定页面
+      </a></span> <span class="next"><a href="/my-blog/frontend/other/one.html">
+        一、MarkDown语法
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/my-blog/assets/js/app.c462eeac.js" defer></script><script src="/my-blog/assets/js/2.b2c966ef.js" defer></script><script src="/my-blog/assets/js/11.cafc44d7.js" defer></script>
+  </body>
+</html>

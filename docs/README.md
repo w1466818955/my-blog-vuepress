@@ -6,10 +6,10 @@ actionText: 更多内容 →
 actionLink: /frontend/html/one
 features:
   - title: 前端技术
-    details: 记录前端学习的点点滴滴。
-  - title: 面试题分享
-    details: 记录最真实的面试问题。
+    details: 记录前端学习的点点滴滴
   - title: 项目bug
-    details: 收集项目中遇到的各种bug。
-footer: Ygm | copyright © 2020-06-06
+    details: 收集项目中遇到的各种bug
+  - title: 其他知识学习
+    details: 网络知识、后端技术、数据库等
+footer: Ygm | copyright © 2019-06-06
 ---

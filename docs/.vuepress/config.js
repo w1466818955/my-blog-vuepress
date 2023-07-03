@@ -3,10 +3,10 @@ module.exports = {
     // 网页标题
     title: 'Ygm的个人博客',
     // 网页介绍
-    description: '你不知道的JavaScript',
+    description: '不断学习，持续更新......',
     // 打包路径和名字
-    // base: "/my-blog/",
-    // dest: "static",
+    base: '/my-blog/',
+    dest: 'static',
     // 网页icon
     head: [['link', { rel: 'icon', href: '/img/img.png' }]],
     markdown: {
@@ -24,12 +24,14 @@ module.exports = {
                     { text: 'HTML', link: '/frontend/html/one' },
                     { text: 'CSS', link: '/frontend/css/one' },
                     { text: 'JavaScript', link: '/frontend/js/one' },
+                    { text: 'TypeScript', link: '/frontend/TS/one' },
+                    { text: 'vue系列', link: '/frontend/vue/one' },
+                    { text: 'react系列', link: '/frontend/react/one' },
+                    { text: 'uniapp', link: '/frontend/uniapp/one' },
+                    { text: '项目问题bug', link: '/question-bug/one' },
                 ],
             },
-            { text: 'vue系列', link: '/frontend/vue/one' },
-            { text: 'react系列', link: '/frontend/react/one' },
-            { text: 'uniapp', link: '/frontend/uniapp/one' },
-            { text: '项目问题bug', link: '/question-bug/one' },
+            { text: 'Python', link: '/frontend/Python/one' },
             { text: '其他', link: '/frontend/other/one' },
             { text: '留言板', link: '/message/' },
         ],
@@ -48,9 +50,9 @@ module.exports = {
                 initialOpenGroupIndex: -1, // 可选的, 默认值是 0
             },
             {
-                title: 'CSS系列', // 必要的
-                collapsable: true, // 可选的, 默认值是 true,
-                sidebarDepth: 2, // 可选的, 默认值是 1
+                title: 'CSS系列',
+                collapsable: true,
+                sidebarDepth: 2,
                 children: [
                     { title: '一、CSS盒模型', path: '/frontend/css/one' },
                     { title: '二、css选择器有哪些？优先级？哪些属性可以继承？', path: '/frontend/css/tow' },
@@ -59,9 +61,9 @@ module.exports = {
                 ],
             },
             {
-                title: 'JS系列', // 必要的
-                collapsable: true, // 可选的, 默认值是 true,
-                sidebarDepth: 2, // 可选的, 默认值是 1
+                title: 'JS系列',
+                collapsable: true,
+                sidebarDepth: 2,
                 children: [
                     { title: '一、for...in和for...of的区别', path: '/frontend/js/one' },
                     { title: '二、js中的Enum枚举类型数据', path: '/frontend/js/tow' },
@@ -70,30 +72,36 @@ module.exports = {
                 ],
             },
             {
-                title: 'vue系列', // 必要的
-                collapsable: true, // 可选的, 默认值是 true,
-                sidebarDepth: 2, // 可选的, 默认值是 1
+                title: 'vue系列',
+                collapsable: true,
+                sidebarDepth: 2,
                 children: [{ title: '一、axios封装', path: '/frontend/vue/one' }],
             },
             {
-                title: 'react系列', // 必要的
-                collapsable: true, // 可选的, 默认值是 true,
-                sidebarDepth: 2, // 可选的, 默认值是 1
+                title: 'react系列',
+                collapsable: true,
+                sidebarDepth: 2,
                 children: [{ title: 'react', path: '/frontend/react/one' }],
             },
             {
-                title: 'uniapp', // 必要的
-                collapsable: true, // 可选的, 默认值是 true,
-                sidebarDepth: 2, // 可选的, 默认值是 1
+                title: 'uniapp',
+                collapsable: true,
+                sidebarDepth: 2,
                 children: [
                     { title: '一、uniapp版本更新', path: '/frontend/uniapp/one' },
                     { title: '二、实现h5跳转app指定url或者app跳转app指定页面', path: '/frontend/uniapp/tow' },
                 ],
             },
             {
-                title: '其他', // 必要的
-                collapsable: true, // 可选的, 默认值是 true,
-                sidebarDepth: 2, // 可选的, 默认值是 1
+                title: 'Python',
+                collapsable: true,
+                sidebarDepth: 2,
+                children: [{ title: '一、python基本知识点', path: '/frontend/Python/one' }],
+            },
+            {
+                title: '其他',
+                collapsable: true,
+                sidebarDepth: 2,
                 children: [
                     { title: '一、MarkDown语法', path: '/frontend/other/one' },
                     { title: '二、git提交规范', path: '/frontend/other/tow' },
@@ -101,6 +109,7 @@ module.exports = {
             },
         ],
     },
+
     // 引入插件
     plugins: ['@vuepress/plugin-back-to-top'],
 };
