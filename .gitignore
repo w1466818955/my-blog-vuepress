@@ -7,6 +7,7 @@ node_modules
 static
 
 # Other files and folders
+.idea
 .settings/
 
 # Executables
